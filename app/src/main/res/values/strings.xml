@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">OrderSystem</string>
+    <string name="login">用户登录</string>
+    <string name="register">用户注册</string>
+    <string name="order_info">订单信息</string>
+
+    <string name="order">历史订单</string>
+    <string name="person">个人信息</string>
+    <string name="share">分享软件</string>
+</resources>

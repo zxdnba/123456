@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FoodActivityTheme" parent="AppTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="PersonTvStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="background">@color/Honeydew</item>
+    </style>
+
+    <style name="PersonLineStyle">
+        <item name="background">@color/Lavender</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="PersonImageStyle">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+</resources>

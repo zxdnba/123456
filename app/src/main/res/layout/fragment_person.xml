@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Lavender"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circle_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            app:civ_border_width="2dp"
+            android:src="@mipmap/nav_icon"
+            app:civ_border_color="@color/CadetBlue"
+            android:layout_marginBottom="20dp"/>
+
+        <View
+            style="@style/PersonLineStyle"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/LightCyan">
+            <ImageView
+                style="@style/PersonImageStyle"
+                android:src="@drawable/ic_person"/>
+            <TextView
+                android:id="@+id/person"
+                style="@style/PersonTvStyle"
+                android:text="@string/person" />
+        </LinearLayout>
+
+        <View
+            style="@style/PersonLineStyle"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/LightCyan">
+            <ImageView
+                style="@style/PersonImageStyle"
+                android:src="@drawable/ic_order"/>
+            <TextView
+                android:id="@+id/order"
+                style="@style/PersonTvStyle"
+                android:text="@string/order" />
+        </LinearLayout>
+
+        <View
+            style="@style/PersonLineStyle"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/LightCyan">
+            <ImageView
+                style="@style/PersonImageStyle"
+                android:src="@drawable/ic_share"/>
+            <TextView
+                android:id="@+id/share"
+                style="@style/PersonTvStyle"
+                android:text="@string/share" />
+        </LinearLayout>
+
+        <View
+            style="@style/PersonLineStyle"
+            android:background="@color/white"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="6dp"
+            android:elevation="5dp"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/nav_menu"
+        app:headerLayout="@layout/nav_header" />
+</androidx.drawerlayout.widget.DrawerLayout>
